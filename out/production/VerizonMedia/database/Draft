@@ -1,15 +1,10 @@
 
 
-
-UML
-
-
-
-- data storage : an LinkedList (rows) of ArrayLists (cols)
+- data storage :  map (rows) of map (cols)
 
 - auxiliary:
-    - HashMap1 <String, ListNode> : (primaryKey, rowIdx) -> to locate a row
-    - HashMap2 <String, Integer> : (columnName, columIdx) -> to locate a column
+    - HashMap1 <String, Map> : (primaryKey, row) -> to locate a row
+    - HashMap2 <String, Object> : (columnName, value) -> to locate a column
 
 
 Database: "db1"

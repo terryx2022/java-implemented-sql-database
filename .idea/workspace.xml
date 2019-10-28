@@ -2,8 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c050022-e5cd-4984-95a1-f61105afd9ed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/database/Row.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/Table.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/TestTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/README" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/Draft" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerizonMedia/Temporay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerizonMedia/Temporay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerizonMedia/binary_island/SolutionDFS.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerizonMedia/binary_island/SolutionDFS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerizonMedia/database/Database$Table.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerizonMedia/database/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerizonMedia/database/Database.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerizonMedia/database/DatabaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerizonMedia/database/DatabaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VerizonMedia/database/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Temporay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Temporay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/binary_island/SolutionDFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binary_island/SolutionDFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/DatabaseManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/TestDatabaseManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/DatabaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/TestDatabase.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -59,16 +72,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in VerizonMedia">
-    <configuration name="All in VerizonMedia" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="VerizonMedia" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DatabaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestTable.updateCellWithDuplicatePrimaryKey">
+    <configuration name="TestDatabase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="VerizonMedia" />
       <extension name="coverage">
         <pattern>
@@ -77,13 +82,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="database" />
-      <option name="MAIN_CLASS_NAME" value="database.DatabaseTest" />
+      <option name="MAIN_CLASS_NAME" value="database.TestDatabase" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DatabaseTest.groupByWithEmptyColumnName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestDatabase.getRows" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="VerizonMedia" />
       <extension name="coverage">
         <pattern>
@@ -92,14 +97,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="database" />
-      <option name="MAIN_CLASS_NAME" value="database.DatabaseTest" />
-      <option name="METHOD_NAME" value="groupByWithEmptyColumnName" />
+      <option name="MAIN_CLASS_NAME" value="database.TestDatabase" />
+      <option name="METHOD_NAME" value="getRows" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DatabaseTest.groupByWithNullColumnName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestDatabase.insertRowWithNullValueArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="VerizonMedia" />
       <extension name="coverage">
         <pattern>
@@ -108,14 +113,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="database" />
-      <option name="MAIN_CLASS_NAME" value="database.DatabaseTest" />
-      <option name="METHOD_NAME" value="groupByWithNullColumnName" />
+      <option name="MAIN_CLASS_NAME" value="database.TestDatabase" />
+      <option name="METHOD_NAME" value="insertRowWithNullValueArray" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="database in VerizonMedia" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestDatabase.updateCellWithInvalidDataType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="VerizonMedia" />
       <extension name="coverage">
         <pattern>
@@ -124,18 +129,36 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="database" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="MAIN_CLASS_NAME" value="database.TestDatabase" />
+      <option name="METHOD_NAME" value="updateCellWithInvalidDataType" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTable.updateCellWithDuplicatePrimaryKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VerizonMedia" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="database.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="database" />
+      <option name="MAIN_CLASS_NAME" value="database.TestTable" />
+      <option name="METHOD_NAME" value="updateCellWithDuplicatePrimaryKey" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in VerizonMedia" />
-        <item itemvalue="JUnit.database in VerizonMedia" />
-        <item itemvalue="JUnit.DatabaseTest" />
-        <item itemvalue="JUnit.DatabaseTest.groupByWithEmptyColumnName" />
-        <item itemvalue="JUnit.DatabaseTest.groupByWithNullColumnName" />
+        <item itemvalue="JUnit.TestTable.updateCellWithDuplicatePrimaryKey" />
+        <item itemvalue="JUnit.TestDatabase" />
+        <item itemvalue="JUnit.TestDatabase.updateCellWithInvalidDataType" />
+        <item itemvalue="JUnit.TestDatabase.getRows" />
+        <item itemvalue="JUnit.TestDatabase.insertRowWithNullValueArray" />
       </list>
     </recent_temporary>
   </component>
@@ -157,10 +180,53 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/database/Table.java</url>
+          <line>185</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/database/TestDatabase.java</url>
+          <line>200</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/database/TestDatabase.java</url>
+          <line>278</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/database/TestDatabase.java</url>
+          <line>423</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/database/Table.java</url>
+          <line>101</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/database/TestDatabase.java</url>
+          <line>422</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="((HashMap)pq.toArray()[1]).entrySet().toArray()[3]" custom="java.util.HashMap" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

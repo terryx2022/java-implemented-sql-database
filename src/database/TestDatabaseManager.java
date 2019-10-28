@@ -6,7 +6,7 @@ import org.junit.jupiter.api.*;
 /**
  * These test cases test the behaviors on 'DatabaseManger' level
  */
-class DatabaseManagerTest {
+class TestDatabaseManager {
     static DatabaseManager DBManager;
 
     @BeforeAll
@@ -109,6 +109,8 @@ class DatabaseManagerTest {
     void getDatabase() {
         assertEquals(DBManager.getDatabase("database"), DBManager.getDBList().get("database"));
     }
+
+
 }
 
 

@@ -33,6 +33,7 @@ public class SolutionBFS {
             int[] indices = queue.poll();
             i = indices[0];
             j = indices[1];
+            // Find neighbors
             for (int row = i-1; row <= i+1; row++) {
                 for (int col = j-1; col <= j+1; col++) {
                     if (withinBound(grid, row, col) && !visited[row][col] && grid[row][col] == 1) {
@@ -51,7 +52,7 @@ public class SolutionBFS {
     }
 
     /**
-     * Driver method: to perform on customized input
+     * Test: customized input (Please see the unit tests in TestSolutionBFS.java)
      * @param args
      */
     public static void main(String[] args) {

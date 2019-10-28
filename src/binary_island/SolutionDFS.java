@@ -21,7 +21,6 @@ public class SolutionDFS {
         return globalMax;
     }
 
-
     private int dfs(int[][]matrix, int i, int j, boolean[][] visited) {
         // Base case: 1. index out of bound; 2.when there's no more unvisted neighbors
         if (!withinBound(matrix, i, j) || matrix[i][j] == 0 || visited[i][j]) {
@@ -41,6 +40,10 @@ public class SolutionDFS {
         return i >= 0 && i < grid.length && j >= 0 && j < grid[0].length;
     }
 
+    /**
+     * Test: customized input (Please see the unit tests in TestSolutionBFS.java)
+     * @param args
+     */
     public static void main(String[] args) {
         SolutionDFS sol = new SolutionDFS();
         int[][] grid1 = new int[][]{{1,1,0,0},
