@@ -12,3 +12,4 @@ I've been self-learning know of concurrency and have come up a few of ideas. But
 * Use "synchronized" keyword to add locks to read/write operations
 * Replace my internal maps with ConcurrentHashMap. Since ConcurrentHashMap divides a whole map into many submaps with individual locks, the problem is the consistensy between write and read during iteration.
 * Use ReadWriteLock to add locks only to where there could be data race, allowing concurrent read to happen, which improves proformance.
+* Simply require user to add locks before they use our read/write APIs.
