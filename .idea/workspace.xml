@@ -2,35 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c050022-e5cd-4984-95a1-f61105afd9ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/database/TestRow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VerizonMedia_TakeHomeExercise.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerizonMedia/Temporay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerizonMedia/binary_island/SolutionBFS.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerizonMedia/binary_island/SolutionBFS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerizonMedia/binary_island/SolutionDFS.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerizonMedia/binary_island/SolutionDFS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerizonMedia/database/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerizonMedia/database/Database.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerizonMedia/database/DatabaseManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerizonMedia/database/DatabaseManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerizonMedia/database/Draft" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerizonMedia/database/Row.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerizonMedia/database/Row.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/VerizonMedia/database/Table.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerizonMedia/database/Table.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerizonMedia/database/TestDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerizonMedia/database/TestDatabase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VerizonMedia/database/TestDatabaseManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerizonMedia/database/TestDatabaseManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/VerizonMedia/database/TestTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VerizonMedia/database/TestTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshot-test.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Temporay.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binary_island/API_Manual.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binary_island/Analysis.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binary_island/SolutionDFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binary_island/SolutionDFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binary_island/Thoughts.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/DatabaseManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/Design Doc.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/Draft" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/Row.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/Row.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/Table.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/TestDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/TestDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/TestDatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/TestDatabaseManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database/TestTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/TestTable.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,40 +61,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.database in VerizonMedia">
-    <configuration name="TestRow.getColumn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.SolutionBFS">
+    <configuration name="SolutionBFS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="binary_island.SolutionBFS" />
       <module name="VerizonMedia" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="database.*" />
+          <option name="PATTERN" value="binary_island.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="database" />
-      <option name="MAIN_CLASS_NAME" value="database.TestRow" />
-      <option name="METHOD_NAME" value="getColumn" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRow.updateColumn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in VerizonMedia" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="VerizonMedia" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="database.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="database" />
-      <option name="MAIN_CLASS_NAME" value="database.TestRow" />
-      <option name="METHOD_NAME" value="updateColumn" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestTable.getRows" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="VerizonMedia" />
       <extension name="coverage">
         <pattern>
@@ -130,12 +93,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="database" />
       <option name="MAIN_CLASS_NAME" value="database.TestTable" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="getRows" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTable.orderBy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestTable.getRowsWithLimit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="VerizonMedia" />
       <extension name="coverage">
         <pattern>
@@ -145,7 +109,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="database" />
       <option name="MAIN_CLASS_NAME" value="database.TestTable" />
-      <option name="METHOD_NAME" value="orderBy" />
+      <option name="METHOD_NAME" value="getRowsWithLimit" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -167,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SolutionBFS" />
+        <item itemvalue="JUnit.All in VerizonMedia" />
+        <item itemvalue="JUnit.TestTable.getRowsWithLimit" />
+        <item itemvalue="JUnit.TestTable.getRows" />
         <item itemvalue="JUnit.database in VerizonMedia" />
-        <item itemvalue="JUnit.TestRow.updateColumn" />
-        <item itemvalue="JUnit.TestRow.getColumn" />
-        <item itemvalue="JUnit.TestTable.orderBy" />
-        <item itemvalue="JUnit.TestTable" />
       </list>
     </recent_temporary>
   </component>

@@ -235,10 +235,9 @@ class TestTable {
     @Test
     void getRows() {
         List<List<Object>> expected = Arrays.asList(
-                Arrays.asList("001", "Alice", "EE", 3.8),
+                Arrays.asList("002", "Bob", "EE", 3.7),
                 Arrays.asList("003", "Cathy", "CS", 4.0),
-                Arrays.asList("002", "Bob", "EE", 3.7)
-
+                Arrays.asList("001", "Alice", "EE", 3.8)
         );
         try {
             List<List<Object>> rows = this.TB.getRows();
@@ -251,7 +250,7 @@ class TestTable {
     @Test
     void getRowsWithLimit() {
         List<List<Object>> expected = Arrays.asList(
-                Arrays.asList("001", "Alice", "EE", 3.8),
+                Arrays.asList("002", "Bob", "EE", 3.7),
                 Arrays.asList("003", "Cathy", "CS", 4.0)
         );
         try {
