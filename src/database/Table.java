@@ -73,7 +73,7 @@ public class Table {
      * @param rowKey - must be a primary key
      * @throws Exception
      */
-    public void deleteRow(Object rowKey) throws Exception{
+    public Row deleteRow(Object rowKey) throws Exception{
         if (rowKey == null) {
             throw new Exception("Failed to delete row: invalid row key!");
         }
@@ -82,6 +82,7 @@ public class Table {
             throw new Exception("Failed to delete row: no such row!");
         }
         System.out.print("Successfully delete the row associated with '" + rowKey + "'!");
+        return deletedRow;
     }
 
     /**
@@ -110,8 +111,13 @@ public class Table {
      * Will print and return all rows
      * @return a list of rows
      */
-    public List<List<Object>> getRows() throws Exception{
-        return orderBy(this.HIDDEN_PK);
+    public List<List<Object>> getRows(){
+        try {
+            return orderBy(this.HIDDEN_PK);
+        } catch (Exception e) {
+            // Shouldn't reach this line
+        }
+        return null;
     }
 
     /**
@@ -129,7 +135,6 @@ public class Table {
      * @param columnName
      * @return a list of rows
      */
-    // TODO
     public List<List<Object>> orderBy(String columnName) throws Exception {
         return orderBy(columnName, this.rows.size());
     }
@@ -145,13 +150,16 @@ public class Table {
         if (columnName == null || columnName.length() == 0) {
             throw new Exception("Failed to ORDER BY: column name cannot be null or empty");
         }
+        if (count <= 0) {
+            throw new Exception("Failed to ORDER BY: count must be positive");
+        }
         List<List<Object>> output = new ArrayList<>();
         Class<?> type = this.dataTypes.get(columnName);
         if (type == null) {
             throw new Exception("Failed to ORDER BY: no such column");
         }
 
-        PriorityQueue<Row> pq = new PriorityQueue<>(
+        PriorityQueue<Row> maxHeap = new PriorityQueue<>(
                 // Comparator
                 (m1, m2) -> {
                     try {
@@ -159,29 +167,31 @@ public class Table {
                             case "java.lang.String":
                                 String s1 = (String) type.cast(m1.getColumn(columnName));
                                 String s2 = (String) type.cast(m2.getColumn(columnName));
-                                return s1.compareTo(s2);
+                                return s2.compareTo(s1);
                             case "java.lang.Double":
                                 Double d1 = (Double) type.cast(m1.getColumn(columnName));
                                 Double d2 = (Double) type.cast(m2.getColumn(columnName));
-                                return d1.compareTo(d2);
+                                return d2.compareTo(d1);
                             case "java.time.LocalDateTime":
                                 System.out.println("LocalDateTime!!!!");
                                 LocalDateTime t1 = (LocalDateTime) type.cast(m1.getColumn(columnName));
                                 LocalDateTime t2 = (LocalDateTime) type.cast(m2.getColumn(columnName));
-                                return t1.compareTo(t2);
+                                return t2.compareTo(t1);
                         }
                     } catch (Exception e) {
                         // Not reachable
                     }
-                    System.out.println("Unreachable!!!!");
                     return 0; // Not reachable
                 }
         );
         for (Row row : this.rows.values()) {
-            pq.offer(row);
+            maxHeap.offer(row);
+            if (maxHeap.size() > count) {
+                maxHeap.poll();
+            }
         }
-        while (!pq.isEmpty() && count > 0) {
-            Row currRow = pq.poll();
+        while (!maxHeap.isEmpty()) {
+            Row currRow = maxHeap.poll();
             List<Object> nestedList = new LinkedList<>();
             for (String col : this.columnNames) {
                 nestedList.add(currRow.getColumn(col));
@@ -189,6 +199,7 @@ public class Table {
             output.add(nestedList);
             count--;
         }
+        Collections.reverse(output);
         printRows(this.columnNames, output);
         return output;
     }
@@ -221,6 +232,28 @@ public class Table {
         return output;
     }
 
+
+    /**
+     * Print the basic information of this table
+     */
+    public void getTableInfo() {
+        System.out.printf(
+                "Table '%s': \n" +
+                        "  created at: %s, \n" +
+                        "  column Names: ",
+                this.tableName, this.timeOfCreation
+        );
+        for (String colName : this.columnNames) {
+            System.out.print("'" + colName + "' ");
+        }
+
+        System.out.printf("\n  column Data Types: ");
+        for (String type : this.dataTypeNames) {
+            System.out.print("'" + type + "' ");
+        }
+        System.out.printf("\n  existing rows: %d", this.rows.size());
+    }
+
     /**
      * Print rows
      * @param columns - the columns to be printed
@@ -243,27 +276,6 @@ public class Table {
             }
             System.out.println();
         }
-    }
-
-    /**
-     * Print the basic information of this table
-     */
-    public void getTableInfo() {
-        System.out.printf(
-                "Table '%s': \n" +
-                        "  created at: %s, \n" +
-                        "  column Names: ",
-                this.tableName, this.timeOfCreation
-        );
-        for (String colName : this.columnNames) {
-            System.out.print("'" + colName + "' ");
-        }
-
-        System.out.printf("\n  column Data Types: ");
-        for (String type : this.dataTypeNames) {
-            System.out.print("'" + type + "' ");
-        }
-        System.out.printf("\n  existing rows: %d", this.rows.size());
     }
 
 

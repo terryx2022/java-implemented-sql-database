@@ -220,6 +220,11 @@ class TestDatabase {
     }
 
     @Test
+    void getTable() {
+        assertEquals(DB.getTable("Student"), DB.getTables().get("Student"));
+    }
+
+    @Test
     void deleteTable() {
         try {
             DB.deleteTable("Student");

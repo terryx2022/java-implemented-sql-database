@@ -29,7 +29,7 @@ class TestDatabaseManager {
         try {
             setUp();
             Database newDB = DBManager.createDatabase("new_database");
-            assertEquals(DBManager.getDBList().get("new_database"), newDB);
+            assertEquals(DBManager.getDatabases().get("new_database"), newDB);
         } catch (Exception e) {
             fail("failed to create a database");
         } finally {
@@ -107,7 +107,7 @@ class TestDatabaseManager {
 
     @Test
     void getDatabase() {
-        assertEquals(DBManager.getDatabase("database"), DBManager.getDBList().get("database"));
+        assertEquals(DBManager.getDatabase("database"), DBManager.getDatabases().get("database"));
     }
 
 

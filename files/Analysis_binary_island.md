@@ -1,4 +1,4 @@
-# Recap of Problem
+# Recap of The Problem
 ## Verbally
 Given the topography information, find the area of the largest island.
 ## Mathematical Model
@@ -9,7 +9,7 @@ Given the topography information, find the area of the largest island.
   * Area equals the sum of all 1's within an island
   * An island is formed by connected 1's
   * Any two 1's adjacent to each other (vertically, horizontally and diagonally) is deemed as connected.
-  * There're 2 islands in the following example<br/>
+  * There're 2 islands in the following example and the answer is 3: <br/>
     0  1  0  0 <br/>
     1  0  1  1 <br/>
     0 0 1 0

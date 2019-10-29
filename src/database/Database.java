@@ -21,9 +21,9 @@ public class Database {
     public Database(String DBName) {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
         LocalDateTime now = LocalDateTime.now();
-        timeOfCreation = dtf.format(now);
+        this.timeOfCreation = dtf.format(now);
         this.databaseName = DBName;
-        tables = new HashMap<String, Table>();
+        this.tables = new HashMap<String, Table>();
     }
 
     /**
@@ -69,11 +69,16 @@ public class Database {
      * Delete a table with the given name
      * @param TBName : the table to be deleted
      */
-    public void deleteTable(String TBName) throws Exception{
-        if (TBName == null || TBName.length() == 0 || tables.remove(TBName) == null) {
+    public Table deleteTable(String TBName) throws Exception{
+        if (TBName == null || TBName.length() == 0) {
+            throw new Exception("Failed to delete table: no such table");
+        }
+        Table removedTable = tables.remove(TBName);
+        if (removedTable == null) {
             throw new Exception("Failed to delete table: no such table");
         }
         System.out.println("Successfully deleted table '" + TBName + "'!");
+        return removedTable;
     }
 
     /**
@@ -100,6 +105,13 @@ public class Database {
         }
         System.out.printf("Total: %d", this.tables.size());
     }
+
+
+    /*
+    ==============================================================
+        Following APIs within Class Table are for testing only!
+    ==============================================================
+     */
 
     /**
      * Return all tables - For testing only!

@@ -22,7 +22,7 @@ public class SolutionDFS {
     }
 
     private int dfs(int[][]matrix, int i, int j, boolean[][] visited) {
-        // Base case: 1. index out of bound; 2.when there's no more unvisted neighbors
+        // Base case: 1. index out of bound; 2.if there's no more unvisted neighbors
         if (!withinBound(matrix, i, j) || matrix[i][j] == 0 || visited[i][j]) {
             return 0;
         }

@@ -7,13 +7,13 @@ import java.util.concurrent.ConcurrentHashMap;
 
 
 public class DatabaseManager {
-    private Map<String, Database> DBList; // keeps all existing databases
+    private Map<String, Database> databases; // keeps all existing databases
 
     /**
      * Constructor method: create a Map to store all databases
      */
     public DatabaseManager() {
-        DBList = new HashMap<String, Database>();
+        databases = new HashMap<String, Database>();
     }
 
     /**
@@ -24,11 +24,11 @@ public class DatabaseManager {
         if (DBName == null || DBName.length() == 0) {
             throw new Exception("Failed to create database: invalid database name");
         }
-        if (DBList.containsKey(DBName)) {
+        if (databases.containsKey(DBName)) {
             throw new Exception("Failed to create database: database name in use");
         }
         Database newDB = new Database(DBName);
-        DBList.put(DBName, newDB);
+        databases.put(DBName, newDB);
         System.out.println("Successfully created database '" + DBName + "'!");
         return newDB;
     }
@@ -39,7 +39,7 @@ public class DatabaseManager {
      * @return the database removed
      */
     public Database deleteDatabase(String DBName) throws Exception{
-        Database removedDB = DBList.remove(DBName);
+        Database removedDB = databases.remove(DBName);
         if (removedDB == null) {
             throw new Exception("Failed to delete database: no such database!");
         } else {
@@ -54,40 +54,46 @@ public class DatabaseManager {
      * @return The database (an instance of Database)
      */
     public Database getDatabase(String DBName) {
-        return DBList.get(DBName);
+        return databases.get(DBName);
     }
 
     /**
      * Print the basic information of this database
      */
-    public void getDatabaseInfo() {
+    public void printDatabaseManagerInfo() {
         System.out.println("Databases: ");
-        for (String str : this.DBList.keySet()) {
-            System.out.printf("'%s', created at %s\n", str, DBList.get(str).timeOfCreation);
+        for (String str : this.databases.keySet()) {
+            System.out.printf("'%s', created at %s\n", str, databases.get(str).timeOfCreation);
         }
-        System.out.printf("Total: %d", this.DBList.size());
+        System.out.printf("Total: %d", this.databases.size());
     }
+
+    /*
+    ==============================================================
+        Following APIs within Class Table are for testing only!
+    ==============================================================
+     */
 
     /**
      * Return all databases - For testing only!
      * @return a map containing all existent databases
      */
-    Map<String, Database> getDBList() {
-        return this.DBList;
+    Map<String, Database> getDatabases() {
+        return this.databases;
     }
 
     /**
      * Add a database - For testing only!
      */
     void addDB(Database newDB) {
-        this.DBList.put(newDB.databaseName, newDB);
+        this.databases.put(newDB.databaseName, newDB);
     }
 
     /**
      * Remove all databases - For testing only!
      */
     void deleteAll() {
-        this.DBList.clear();
+        this.databases.clear();
     }
 
 }

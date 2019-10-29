@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Row {
+public class Row{
     private Map<String, Object> row; // stores pairs of (rowkey, value)
 
     /**
@@ -59,4 +59,15 @@ public class Row {
         }
         this.row.put(columnName, newValue);
     }
+
+    /*
+    ==============================================================
+        Following APIs within Class Table are for testing only!
+    ==============================================================
+     */
+
+    Map<String, Object> getInternalMap() {
+        return this.row;
+    }
+
 }
