@@ -43,7 +43,7 @@ public class TestSolutionBFS {
      }
 
     /**
-     * Test case of random
+     * Test case of random input
      */
      @Test
      public void testRandomInput() {
