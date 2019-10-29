@@ -1,6 +1,10 @@
 # VerizonMedia Take-home Problems
 
 ## Binary-Matrix Island Problem
+### [Solution#1 :BFS](src/SolutionBFS.java)
+### [Test#1](src/TestSolutionBFS.java)
+### [Solution#2 :DFS](src/SolutionDFS.java)
+### [Test#2](src/TestSolutionDFS.java)
 ### [Theoretical Analysis](files/Analysis_binary_island.md)
 
 
