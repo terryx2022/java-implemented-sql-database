@@ -1,0 +1,29 @@
+
+
+- data storage :  map (rows) of map (cols)
+
+- auxiliary:
+    - HashMap1 <String, Map> : (primaryKey, row) -> to locate a row
+    - HashMap2 <String, Object> : (columnName, value) -> to locate a column
+
+
+Database: "db1"
+
+Table: "student"
+
+rows\colums |  ID  | name  |  gender |  Major  |  GPA  |  ...
+----------- |--------------------------------------------------
+    Jack
+----------- |
+    Bob
+----------- |
+    Cathy
+----------- |
+    Dave
+----------- |
+    Ellen
+----------- |
+
+
+
+
