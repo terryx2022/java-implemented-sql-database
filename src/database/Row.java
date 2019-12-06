@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Row{
+class Row{
     private Map<String, Object> row; // stores pairs of (rowkey, value)
 
     /**
@@ -15,7 +15,7 @@ public class Row{
      * @param hiddenColumn
      * @throws Exception
      */
-    public Row(String[] columnNames, Map<String, Class<?>> types, Object[] values, String hiddenColumn) throws Exception {
+    Row(String[] columnNames, Map<String, Class<?>> types, Object[] values, String hiddenColumn) throws Exception {
         this.row = new HashMap<>();
         for(int i = 0; i < columnNames.length; i++) {
             if (values[i] == null) {

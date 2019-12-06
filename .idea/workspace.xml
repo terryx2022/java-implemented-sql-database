@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c050022-e5cd-4984-95a1-f61105afd9ed" name="Default Changelist" comment="" />
+    <list default="true" id="1c050022-e5cd-4984-95a1-f61105afd9ed" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/Row.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/Row.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +59,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SolutionBFS">
+  <component name="RunManager" selected="JUnit.database in VerizonMedia">
     <configuration name="SolutionBFS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="binary_island.SolutionBFS" />
       <module name="VerizonMedia" />
@@ -126,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.database in VerizonMedia" />
         <item itemvalue="Application.SolutionBFS" />
         <item itemvalue="JUnit.All in VerizonMedia" />
         <item itemvalue="JUnit.TestTable.getRowsWithLimit" />
         <item itemvalue="JUnit.TestTable.getRows" />
-        <item itemvalue="JUnit.database in VerizonMedia" />
       </list>
     </recent_temporary>
   </component>
@@ -177,11 +180,6 @@
           <url>file://$PROJECT_DIR$/src/database/TestDatabase.java</url>
           <line>423</line>
           <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/database/Table.java</url>
-          <line>102</line>
-          <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/database/TestDatabase.java</url>
